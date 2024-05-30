@@ -7,7 +7,7 @@ show_button=st.button('Show Data')
 #read the data only once a cached function  
 @st.cache_resource
 def load_data():
-    return pd.read_xlsx('Superstore.xlsx')
+    return pd.read_csv('Superstore.csv')
 
 df = load_data()
 if show_button:
